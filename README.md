@@ -1,3 +1,5 @@
+[![GitHub release](https://img.shields.io/github/release/UnitVectorY-Labs/yamlequal.svg)](https://github.com/UnitVectorY-Labs/yamlequal/releases/latest) [![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT) [![Active](https://img.shields.io/badge/Status-Active-green)](https://guide.unitvectorylabs.com/bestpractices/status/#active) [![codecov](https://codecov.io/gh/UnitVectorY-Labs/yamlequal/graph/badge.svg?token=JH6fDDrnah)](https://codecov.io/gh/UnitVectorY-Labs/yamlequal)
+
 # yamlequal
 
 A lightweight Go library that verifies the semantic equality of YAML files.
