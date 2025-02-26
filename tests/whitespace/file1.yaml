@@ -1,0 +1,6 @@
+description: "This is a test description."
+message: "Hello world!"
+multiline: |
+  This is a multiline
+  string value with
+  preserved newlines.

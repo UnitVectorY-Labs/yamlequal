@@ -1,0 +1,5 @@
+user:
+  name: John
+  middleName: ""  # empty string instead of null
+  email: john@example.com
+  address: ""     # empty string

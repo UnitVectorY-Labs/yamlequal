@@ -1,0 +1,8 @@
+user:
+  name: John Doe
+  contact:
+    email: john@example.com
+    phone: 555-1234
+  preferences:
+    theme: dark
+    notifications: true

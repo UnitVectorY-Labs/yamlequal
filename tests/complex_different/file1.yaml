@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: default
+  labels:
+    app: my-application
+    environment: production
+data:
+  settings.yaml: |
+    database:
+      host: postgres.example.com
+      port: 5432
+      credentials:
+        username: dbuser
+        password: secret
+    cache:
+      enabled: true
+      ttl: 3600
+    features:
+      - name: search
+        enabled: true
+        config:
+          maxResults: 100
+      - name: notifications
+        enabled: false
+    logging:
+      level: info
+      outputs:
+        - type: file
+          path: /var/log/app.log
+        - type: syslog
+          facility: local0
