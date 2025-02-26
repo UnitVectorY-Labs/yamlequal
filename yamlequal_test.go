@@ -36,17 +36,23 @@ func TestYAMLFiles(t *testing.T) {
 				t.Fatalf("File %s does not exist", file2Path)
 			}
 
-			equal, diff, err := CompareYAMLFiles(file1Path, file2Path)
+			equal, result, err := CompareFiles(file1Path, file2Path)
 			if err != nil {
 				t.Fatalf("Error comparing YAML files in %s: %v", dirPath, err)
 			}
 
+			// Print comparison result for clarity
+			t.Logf("Test case: %s - Files %s - %s",
+				dir.Name(),
+				map[bool]string{true: "are equal", false: "are different"}[equal],
+				result)
+
 			if expectEqual && !equal {
-				t.Fatalf("Expected files to be equal, but they were not. Diff: %s", diff)
+				t.Fatalf("Expected files to be equal, but they were not. Result: %s", result)
 			}
 
 			if !expectEqual && equal {
-				t.Fatalf("Expected files to be different, but they were equal")
+				t.Fatalf("Expected files to be different, but they were equal. Result: %s", result)
 			}
 		})
 	}
