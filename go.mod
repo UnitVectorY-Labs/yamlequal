@@ -1,5 +1,5 @@
 module github.com/UnitVectorY-Labs/yamlequal
 
-go 1.24.0
+go 1.24.1
 
 require gopkg.in/yaml.v3 v3.0.1
