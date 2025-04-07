@@ -20,7 +20,7 @@ import "github.com/UnitVectorY-Labs/yamlequal"
 ```go
 func main() {
 	// Compare two YAML files
-	equal, diff, err := yamlequal.CompareFiles("file11.yaml", "file2.yaml")
+	equal, diff, err := yamlequal.CompareFiles("file1.yaml", "file2.yaml")
 	if err != nil {
 		// Handle error
 		fmt.Println("Error comparing files:", err)
@@ -50,7 +50,7 @@ value: 42
 	yamlContent2 := []byte(`
 foo: bar
 `)
-	// Compare two YAML files
+	// Compare two YAML content strings directly
 	equal, diff, err := yamlequal.CompareYAML(yamlContent1, yamlContent2)
 	if err != nil {
 		// Handle error
