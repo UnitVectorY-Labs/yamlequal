@@ -40,7 +40,7 @@ func CompareFiles(filePath1, filePath2 string) (bool, string, error) {
 // (if they differ), and an error if any parsing errors occur.
 func CompareYAML(yamlContent1, yamlContent2 []byte) (bool, string, error) {
 	// Unmarshal the YAML content into generic data structures
-	var data1, data2 interface{}
+	var data1, data2 any
 	if err := yaml.Unmarshal(yamlContent1, &data1); err != nil {
 		return false, "", fmt.Errorf("error parsing first YAML content: %v", err)
 	}
