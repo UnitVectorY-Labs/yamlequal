@@ -1,0 +1,12 @@
+name: yamlequal
+default_branch: main
+config:
+  description: "A lightweight Go library that verifies the semantic equality of YAML files."
+  license: MIT
+  language: go
+  release: build-go
+  release_github: true
+  status: active
+  codecov:
+    enabled: true
+    token: JH6fDDrnah
