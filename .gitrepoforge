@@ -1,6 +1,7 @@
 name: yamlequal
 default_branch: main
 config:
+  osv: sarif
   description: "A lightweight Go library that verifies the semantic equality of YAML files."
   license: MIT
   language: go
